@@ -8,7 +8,7 @@ class Mascota{
 }
 
 //Sub-clase / Clase hija
-class perro extends Mascota{
+class Perro extends Mascota{
     constructor(nombre, patas, ladra, cola){
         super(nombre, patas);
         this.ladra = ladra;
@@ -25,7 +25,17 @@ class Serpiente extends Mascota{
     }
 }
 
-const pluto = new perro('Pluto', 4, true, true);
+const pluto = new Perro('Pluto', 4, true, true);
 const kaa = new Serpiente('Kaa', 0, 'cafe', false);
+
+
 console.log(pluto);
 console.log(kaa);
+
+
+// Destructuración de objetos
+const { nombre, cerebro, patas, ladra, comida, cola } = pluto;
+
+console.log(nombre);
+console.log(cerebro);
+console.log(patas);
