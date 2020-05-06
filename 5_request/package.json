@@ -1,0 +1,21 @@
+{
+  "name": "5_request",
+  "version": "1.0.0",
+  "description": "Esta es mi primera aplicación con npm",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "keywords": [
+    "JS",
+    "request",
+    "example",
+    "pokeapi"
+  ],
+  "author": "Gera",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
