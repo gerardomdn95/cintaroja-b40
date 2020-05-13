@@ -5,7 +5,9 @@ import './App.css';
 const App = () => {
   return (
     <div>
-      <h1>Giphy</h1>
+      <nav className="navbar navbar-light bg-info">
+        <a className="navbar-brand" href="#">GIPHY</a>
+      </nav>
       <Buscador />
     </div>
   );

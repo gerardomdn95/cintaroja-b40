@@ -7,7 +7,7 @@ const Buscador = () => {
     const [texto, setTexto] = useState('');
     const [gif, setGif] = useState([]);
 
-    const API_KEY = '2mHl2fxFasXDZj0LZ2w4GAoPzb9SwKKc';
+    const API_KEY = '';
 
     const ObtenerGif = () => {
         axios.get(`https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${texto}&limit=5`)
@@ -35,7 +35,8 @@ const Buscador = () => {
                 {/* <button onClick={() => ObtenerGif()}>Hacer petición</button> */}
                 <div className="row">
                     {gif.length > 0
-                        ? gif.map(element => <ImageCard key={element.id} img={element.images.downsized_large.url} />)
+                        ? gif.map(element => 
+                            <ImageCard key={element.id} origin={element.source_post_url} title={element.title} img={element.images.downsized_large.url} />)
                         : <p className="text-center">No hay gifs</p>}
                 </div>
             </div>
