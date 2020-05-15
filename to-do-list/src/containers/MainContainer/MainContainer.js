@@ -1,6 +1,7 @@
 import React from 'react';
 import AppNav from '../../components/AppNav/AppNav';
-import TasksCard from '../../components/TasksCard/TasksCard'
+import TasksCard from '../../components/TasksCard/TasksCard';
+import NewTask from '../../components/NewTask/NewTask'
 
 const MainContainer = () => {
     return (
@@ -8,6 +9,8 @@ const MainContainer = () => {
             <AppNav />
             <div className="container">
             <TasksCard />
+            {/* Formulario */}
+            <NewTask />
             </div>
         </div>
     )

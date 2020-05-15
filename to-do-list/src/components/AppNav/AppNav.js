@@ -3,7 +3,7 @@ import React from 'react'
 const AppNav = () => {
     return (
         <nav className="navbar navbar-primary bg-dark">
-            <a className="navbar-brand" href="#">To do list</a>
+            <p className="navbar-brand">To do list</p>
         </nav>
     )
 }
